@@ -1,0 +1,124 @@
+body{
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fcba03;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li ul li{
+    display: none;
+    background-color: #595342;
+}
+ul li:hover ul li{
+    display: block;
+    float: left;
+    list-style: none;
+    color: #fcba03;
+}
+header{
+    background-color: #000;
+    color: #fcba03;
+    padding-top: 15px;
+    min-height: 70px;
+    border-bottom: #c2b48d 3px solid;
+}
+header h1{
+    margin-top: 5%;
+    font-size: 60px;
+}
+header a{
+    color: #fcba03;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 20px;
+}
+header nav{
+    float: right;
+}
+header .highlight, header .current a{
+    color:#332f25;
+    font-weight: bold;
+}
+header a:hover{
+    background-color: #595342;
+    color: #f0b20a;
+    font-weight: bold;
+    padding: 2px;
+}
+#showcase{
+    font-size: 50px;
+    text-align: center;
+    background: url("image/showcase.jpg") no-repeat 0 -600px;
+    min-height: 500px;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-bottom: solid;
+    border-color: #c2b48d;
+}
+#showcase h1{
+    margin-top: 140px;
+    text-shadow: 
+    -1px -1px 0 #595342,
+    1px -1px 0 #595342,
+    -1px 1px 0 #595342,
+    1px 1px 0 #595342;
+}
+#boxes{
+    background-color: #332f25;
+    color: #fcba03;
+    min-height: 200px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#boxes .box img{
+    width: 150px;
+}
+footer{
+    margin-top: 50px;
+    color: #f0b20a;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media(max-width: 1315px){
+    header #branding,header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box,#about,#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+        white-space: nowrap;
+    }
+    header nav li{
+        display: block;
+    }
+    #showcase{
+        background: url("") no-repeat center;
+        font-size: 35px;
+    }
+    #showcase h1{
+        margin-top: 170px;
+    }
+    #showcase{
+        display: block;
+    }
+}

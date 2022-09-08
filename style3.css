@@ -1,0 +1,151 @@
+body{
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fcba03;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li ul li{
+    display: none;
+    background-color: #595342;
+}
+ul li:hover ul li{
+    display: block;
+    float: left;
+    list-style: none;
+    color: #fcba03;
+}
+header{
+    background-color: #000;
+    color: #fcba03;
+    padding-top: 15px;
+    min-height: 70px;
+    border-bottom: #c2b48d 3px solid;
+}
+header h1{
+    margin-top: 5%;
+    font-size: 60px;
+}
+header a{
+    color: #fcba03;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 20px;
+}
+header nav{
+    float: right;
+}
+header .highlight, header .current a{
+    color:#332f25;
+    font-weight: bold;
+}
+header a:hover{
+    background-color: #595342;
+    color: #f0b20a;
+    font-weight: bold;
+    padding: 2px;
+}
+#about{
+    color: #f5e3b0;
+    background-color:#332f25 ;
+    width: 65%;
+    float: left;
+}
+#about h1{
+    text-align: center;
+    font-size: 30px;
+}
+#about p{
+    font-size: 20px;
+    text-align: justify;
+}
+#sidebar{
+    color: #f5e3b0;
+    background-color:#332f25 ;
+    width: 35%;
+    float: right;
+    height: 255px;
+}
+#sidebar h3{
+    font-size: 30px;
+    text-align: center;
+}
+#sidebar p{
+    font-size: 20px;
+    text-align: justify;
+}
+footer{
+    margin-top: 50px;
+    color: #f0b20a;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#eyeimage{
+    background-color: #332f25;
+    text-align: center;
+    color: #f5e3b0;
+}
+.dark{
+    background-color: #705c26;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#article{
+    background-color: #947a34;
+    color: #f5e3b0;
+    border-bottom: solid;
+    border-color: #453e2b;
+}
+#article h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+#article h2{
+    text-align: center;
+}
+#article p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media(max-width: 1315px){
+    header #branding,header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box,#about,#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+        white-space: nowrap;
+    }
+    header nav li{
+        display: block;
+    }
+    #showcase{
+        background: url("") no-repeat center;
+        font-size: 35px;
+    }
+    #showcase h1{
+        margin-top: 170px;
+    }
+    #showcase{
+        display: block;
+    }
+}
